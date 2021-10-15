@@ -1,6 +1,6 @@
 ﻿# Azure STT Windows Background Service
 
-This project aim is to create a simple Windows Background service in C# code, to perform subsequent Speech-To-Text (STT) process  using Azure cloud, on incoming wave file(s), placed in a specific windows directory.
+This project aim is to create a simple Windows Background service in C# code, to perform subsequent Speech-To-Text (STT) process using Azure cloud, on incoming wave file(s), placed in a specific directory.
 
 ## Disclaimer 1
 This software works but it's not PRODUCTION READY.
@@ -62,6 +62,12 @@ To install it as a windows service
 
 ```bash
 sc.exe create "Azure Cloud STT Service" binpath=C:\stt-service\AzureCloudSTTService.exe
+```
+After installation, the service Startup mode is Manual. If you want you can change it to Automatic, so the software can start autonomously at each reboot.
+You can do it from the Windows Services GUI, or via command line
+
+```bash
+sc.exe config "Azure Cloud STT Service" start=auto
 ```
 
 ## Interact with the windows service
