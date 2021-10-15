@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UserSecretsId>dotnet-STTCloudService-3294F6B2-9345-48B5-BF57-069B0A542437</UserSecretsId>
+    <Authors>Giulio Fronterotta</Authors>
+    <Company>Giulio Fronterotta</Company>
+    <PackageId>Azure Cloud STT</PackageId>
+    <Version>1.0</Version>
+    <Product>Azure Cloud STT</Product>
+    <PackageIcon>cloud_icon.png</PackageIcon>
+    <AssemblyName>AzureCloudSTTService</AssemblyName>
+    <ApplicationIcon>cloud_icon.ico</ApplicationIcon>
+    <Description>This service running in background can monitor an input folder for .wav files. Once file are detected, they are sent to Azure Speech To Text Services. After the call, the original .wav file is moved to the output folder along with his translation txt file.</Description>
+    <Copyright>Giulio Fronterotta</Copyright>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.18.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="5.0.0" />
+    <PackageReference Include="NAudio" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="cloud_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

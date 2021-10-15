@@ -1,0 +1,14 @@
+﻿# Start Powershell with Admin grants
+
+Available commands
+# Install Service to services.msc console
+sc.exe create "Azure Cloud STT Service" binpath=C:\stt-service\AzureCloudSTTService.exe
+
+# Stop Service
+sc.exe stop "Azure Cloud STT Service"
+
+# Start Service
+sc.exe start "Azure Cloud STT Service"
+
+# Remove Service from services.msc console
+sc.exe delete "Azure Cloud STT Service"
