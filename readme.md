@@ -38,13 +38,16 @@ To create your Speech Service resource, follow these steps (Prerequisite, you ha
 ![Add Speech Service](/images/tutorial_01.png)
 
 3.	Fill the values as in the below example. **Name** is whatever you want. **Subscription** is your Azure Subscription. **Location** is the Azure region where your service will be hosted. **Pricing Tier** can be F0, the free one, but you can create only one free resource for each subscription. S0 is the paid one, but you have always 5 free hour before paying. As **Resource Group** select an existing one or create a fresh resource group right here.
+
 ![Add Speech Service](/images/tutorial_02.png) 
 
 4.	Press "Create"
 5.	At the end of deployment, press “Go To Resource”, or open the newly created resource from the specific Resource Group
+
 ![Add Speech Service](/images/tutorial_03.png) 
  
 6.	Read the Key to be able to use the service. Remember, this is the setting to be placed in the Application Settings file, BEFORE starting the service
+
 ![Add Speech Service](/images/tutorial_04.png) 
 
 If you better prefer, take a look at the official Microsoft Guide to create the Speech service (https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)
