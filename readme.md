@@ -34,7 +34,8 @@ To create your Speech Service resource, follow these steps (Prerequisite, you ha
 
 1.	Visit this URL, https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2Faccounts
 2.	Press the button "Add Speech Service"
-![Add Speech Service](/images/tutorial_01.png) 
+
+![Add Speech Service](/images/tutorial_01.png)
 
 3.	Fill the values as in the below example. **Name** is whatever you want. **Subscription** is your Azure Subscription. **Location** is the Azure region where your service will be hosted. **Pricing Tier** can be F0, the free one, but you can create only one free resource for each subscription. S0 is the paid one, but you have always 5 free hour before paying. As **Resource Group** select an existing one or create a fresh resource group right here.
 ![Add Speech Service](/images/tutorial_02.png) 
