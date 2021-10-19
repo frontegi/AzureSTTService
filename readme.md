@@ -1,6 +1,12 @@
 ﻿# Azure STT Windows Background Service
 
-This project aim is to create a simple Windows Background service in C# code, to perform subsequent Speech-To-Text (STT) process using Azure cloud, on incoming wave file(s), placed in a specific directory.
+This project aim is to create a simple Windows Background service in C# code, to perform subsequent Speech-To-Text (STT) process using Azure cloud, on incoming wave file(s), placed in a specific directory. The output will be a txt file with the transcription. The Service user NAudio library to process file with more than 2 audio channels.
+In that case, channels are separated and only the first is submitted to the Speech to text service.
+
+Possible Improvements:
+* **Better error handling**
+* **More parameters in the application settings to fine tune behaviour of the service**
+* **Ability to set a different STT Service (i.e. AWS, Google, IBM Watson, etc)**
 
 ## Disclaimer 1
 This software works but it's not PRODUCTION READY.
